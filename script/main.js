@@ -15,13 +15,6 @@ let bannerButton = document.getElementById("banner-button");
 let whatsAppGonder = document.getElementById("whatsAppGonder");
 let contributors = document.getElementById("contributors");
 
-let dilButonlari = document.querySelectorAll('#dilSecme button');
-
-//sayfa dilini önbellekten çek yoksa türkçe başlat
-let sayfaDili = localStorage.getItem('sayfaDili') || 'tr';
-
-console.log(sayfaDili);
-
 // Soruları tutacağımız dizi & soru indexlerini tutacağımız dizi
 const sorular = [];
 const soruIndexler = [];
@@ -168,16 +161,3 @@ fetch("https://api.github.com/repos/alicangunduz/tanismada-sohbet-tikanmasin/con
     }
   })
   .catch((error) => console.error(error));
-
-//Dil seçme
-function dilDegistir(secilenDil) {
-  sayfaDili = secilenDil;
-  localStorage.setItem("sayfaDili", sayfaDili);
-  console.log(`${sayfaDili} secildi`);
-}
-
-dilButonlari.forEach((buton) => {
-  buton.addEventListener("click", function () {
-    dilDegistir(buton.id);
-  });
-});

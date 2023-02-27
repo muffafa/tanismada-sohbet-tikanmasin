@@ -1,0 +1,12 @@
+{
+    "pageTitle": "Flört Soru Makinesi",
+    "bannerHeader": "Açık-Kaynak",
+    "bannerContent": "Projeye destek vermek isterseniz github üzerinden ulaşabilirsiniz.",
+    "bannerRedirect": "Repo'ya git",
+    "questionsEnd": "Sorular bitti aslanım olmuyorsa olmuyordur zorlama",
+    "appDiscription": "Flört zamanı tıkandığında zorlanma, soru üret!",
+    "prevQuestion": "Önceki Soru",
+    "nextQuestion": "Soru Üret",
+    "sendFromWhatsapp": "Whatsapp Gönder",
+    "contributers": "Katkıda bulunanlar"
+}
